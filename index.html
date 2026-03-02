@@ -47,6 +47,23 @@
             border-radius: 5px;
         }
     </style>
+    .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
 </head>
 
 <body>
@@ -63,11 +80,16 @@
 
 <div class="section gallery">
     <h2>Gallery</h2>
-<img src="firstpost.jpg">
-<img src="2ndpost.jpg">
-<img src="3rdpost.jpg">
-<img src="4thpost.jpg">
-<img src="5thpost.jpg">
+<div class="section gallery">
+    <h2>Gallery</h2>
+    <div class="grid">
+        <img src="firstpost.jpg">
+        <img src="2ndpost.jpg">
+        <img src="3rdpost.jpg">
+        <img src="4thpost.jpg">
+        <img src="5thpost.jpg">
+    </div>
+</div>
 </div>
 
 <div class="section">
